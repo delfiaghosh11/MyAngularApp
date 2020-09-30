@@ -9,12 +9,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: 'table', component: TableComponent },
-  { path: '',   redirectTo: '/table', pathMatch: 'full' },
-  { path: 'calculator', component: CalculatorComponent }
+  { path: '', redirectTo: '/table', pathMatch: 'full' },
+  { path: 'calculator', component: CalculatorComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
